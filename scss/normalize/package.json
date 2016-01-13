@@ -1,0 +1,69 @@
+{
+  "_args": [
+    [
+      "node.normalize.scss",
+      "/Users/luisamarieth/Sites/forbes-media_devproject"
+    ]
+  ],
+  "_from": "node.normalize.scss@*",
+  "_id": "node.normalize.scss@3.0.3",
+  "_inCache": true,
+  "_location": "/node.normalize.scss",
+  "_nodeVersion": "0.10.36",
+  "_npmUser": {
+    "email": "appleboy.tw@gmail.com",
+    "name": "appleboy"
+  },
+  "_npmVersion": "2.11.0",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "node.normalize.scss",
+    "raw": "node.normalize.scss",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "*",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/node.normalize.scss/-/node.normalize.scss-3.0.3.tgz",
+  "_shasum": "936c0c019a1b25c8db57f558df5b026dc4c1e5f9",
+  "_shrinkwrap": null,
+  "_spec": "node.normalize.scss",
+  "_where": "/Users/luisamarieth/Sites/forbes-media_devproject",
+  "author": "",
+  "bugs": {
+    "url": "https://github.com/appleboy/normalize.scss/issues"
+  },
+  "dependencies": {},
+  "description": "Normalize.css as a node packaged module",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "936c0c019a1b25c8db57f558df5b026dc4c1e5f9",
+    "tarball": "http://registry.npmjs.org/node.normalize.scss/-/node.normalize.scss-3.0.3.tgz"
+  },
+  "files": [
+    "_normalize.scss"
+  ],
+  "gitHead": "cc00370ff89691a7633873ca6fe55cc09a6e4871",
+  "homepage": "https://github.com/appleboy/normalize.scss",
+  "installable": true,
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "appleboy",
+      "email": "appleboy.tw@gmail.com"
+    }
+  ],
+  "name": "node.normalize.scss",
+  "optionalDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/appleboy/normalize.scss.git"
+  },
+  "scripts": {},
+  "style": "_normalize.scss",
+  "version": "3.0.3"
+}

@@ -1,0 +1,35 @@
+.page-casestudy {
+	.mod-featured {
+		background-image: url('/images/casestudy-header.jpg');
+		@media(min-width: $large-screen) {
+			height: 624px;
+		}
+	}
+	.mod-featured-content__page span {
+		padding-bottom: 3px;
+		font-size: 18px;
+	}
+	.mod-featured-content__title {
+		margin-top: 14px;
+	}
+	.mod-audience__description {
+		margin-top: 40px;
+	}
+	@media(min-width: $large-screen) {
+		.mod-featured-content__page {
+			margin-bottom: 25px;
+		}
+		.mod-featured-content__page span {
+			font-size: 40px;
+		    padding-bottom: 10px;
+		    border-bottom-width: 7px;
+		}
+		.mod-audience__container {
+			padding-right: 10px;
+			min-width: 100%;
+		}
+		.mod-audience__description {
+			margin-top: 0px;
+		}
+	}
+}

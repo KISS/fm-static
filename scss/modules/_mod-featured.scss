@@ -1,0 +1,115 @@
+.mod-featured {
+	background-color: #000000;
+    background-size: cover;
+	position: relative;
+    height: 400px;
+    color: #fff;
+    padding: 0px;
+}
+.mod-featured-container {
+	position: absolute;
+    bottom: 30px;
+    padding: 0 20px;
+}
+.mod-featured-content__title hr {
+    width: 24%;
+    margin: 0 0 10px;
+    border-bottom: 3px solid #fff;
+}
+.mod-featured-content__page {
+	span {
+		font-size: 24px;
+		border-bottom: solid;
+        padding-bottom: 3px;
+	    display: inline-block;
+		i {
+			font-size: 40px;
+		    vertical-align: bottom;
+		    margin-right: 8px;
+	        display: inline-block;
+		}
+	}
+}
+.mod-featured-content__title {
+	font-size: 35px;
+	font-weight: bold;
+	margin-top: 25px;
+	h2 {
+	    line-height: 1.0;	
+	    margin-bottom: 18px;
+	}
+}
+.mod-featured-content__description {
+	font-size: 14px;
+	padding-bottom: 30px;
+	font-family: 'minionpro-semibold-it';
+}
+.mod-featured-content__video {
+	font-size: 20px;
+	width: 140px;
+	padding: 7px 10px;
+	background-color: $brand-yellow;
+	color: #000000;
+	border-radius: 0px;
+	height: 40px;
+	display: block;
+	text-align: center;
+	font-family: 'minionpro-semibold';
+	&:hover,
+    &:focus{
+		background-color: $brand-yellow;
+		color: #000000;
+	}
+	span {
+		font-size: 20px;
+		display: inline-block;
+        vertical-align: text-bottom;
+	}
+	.icon-play {
+		color: #ffffff;
+	    font-size: 27px;
+	    display: inline-block;
+	    margin-left: 5px;
+	}
+}
+
+@media (min-width: $large-screen) {
+	.mod-featured {
+		height: 775px;
+	}
+	.mod-featured-container {
+		bottom: 110px;	
+		padding-left: 53px;
+	}
+	.mod-featured-content__page span {
+		font-size: 40px;
+	}
+	.mod-featured-content__title hr {
+		border-bottom-width: 7px;
+	    width: 25%;
+        margin-bottom: 30px;
+	}
+	.mod-featured-content__title {
+		font-size: 90px;
+		h2 {
+	        margin-bottom: 28px;
+	        font-size: 90px;
+		}
+	}
+	.mod-featured-content__description {
+		font-size: 22px;
+		padding-bottom: 45px;
+	}
+	.mod-featured-content__video {
+		width: 180px;
+		height: 50px;
+		span {
+			font-size: 24px;
+			vertical-align: bottom;
+		}
+		.icon-play {
+			font-size: 35px;
+		    vertical-align: sub;
+		}
+	}
+}

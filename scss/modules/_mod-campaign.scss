@@ -1,0 +1,111 @@
+// MOBILE
+.mod-campaign {
+	background-color: $brand-yellow;
+	.mod-campaign__container {
+		padding: 30px 20px 20px;
+	}
+	.mod-campaign__section-header {
+		h2 {
+			font-size: 35px;
+			margin-bottom: 10px;
+		}
+		.header-hr {
+			margin-left: 0px;
+		}
+	}
+	.mod-campaign__section-selector  {
+		margin-top: 30px;
+	}
+	.mod-campaign__section-selector span {
+		font-size: 16px;
+		font-family: 'minionpro-medium-it';
+		color: $brand-brown;
+	}
+	.mod-campaign__section-selector--dropdown form {
+		select {
+			width: 100%;
+			height: 50px;
+		    margin: 10px 0 20px;
+			background-color: $brand-yellow;
+			border-color: #ffffff;
+			border-width: 3px;
+			border-radius: 0px;
+		    font-size: 20px;
+		    font-family: 'minionpro-semibold';
+		}
+	} 
+	.mod-campaign__section-selector--dropdown--btn {
+		text-align: right;
+		button {
+			background-color: #000000;
+			padding: 0 17px;
+		    border-radius: 1px;
+		    height: 50px;
+		    width: 70px;
+		}
+		span {
+			font-size: 22px;
+			margin: 0 auto;
+			font-family: 'gotham-bold';
+			color: #ffffff;
+		}
+	}
+}
+
+// DESKTOP
+@media(min-width: $large-screen) {
+	.mod-campaign {
+		.mod-campaign__container {
+			margin: 0 auto;
+			height: 305px;
+			// padding: 90px 50px;
+		    width: 785px;
+		    padding: 90px 0px;
+		}
+		.mod-campaign__section-header {
+		    display: inline-block;
+			width: 270px;
+		    vertical-align: top;
+	        // margin-right: 58px;
+	        margin-right: 55px
+		}
+		.mod-campaign__section-header h2 {
+	    	font-size: 54px;
+    	    line-height: 1.0;
+    	    margin-bottom: 20px;
+	    }
+		.mod-campaign__section-selector {
+			display: inline-block;
+			width: 460px;
+			vertical-align: top;
+			margin-top: 5px;
+			float: right;
+			span {
+				font-size: 18px;
+			}
+		}
+		.mod-campaign__section-selector--dropdown form {
+			margin-top: 10px;
+			select {
+				display: inline-block;
+				width: 350px;
+				font-size: 24px;
+			    height: 60px;
+			    margin: 0px 16px 0px 0px;
+			    border-width: 5px;
+			}
+		}
+		.mod-campaign__section-selector--dropdown--btn {
+	    	display: inline-block;
+	    	padding-bottom: 0px;
+	    	vertical-align: top;
+	    	button {
+	    		height: 60px;
+	    		width: 85px;
+	    	}
+	    	span {
+	    		font-size: 28px;
+	    	}
+	    }
+	}
+}

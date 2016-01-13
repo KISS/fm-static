@@ -1,0 +1,129 @@
+.mod-showcase__full-image {
+	border-top: none;
+	.mod-showcase__slider {
+		margin-top: 0px;
+	}
+	#slider {
+		margin-top: 0px;
+		height: 380px;
+		ul li img {
+			height: 245px;
+			margin-bottom: 50px;
+			width: 100%;
+		}
+		ul li {
+	    	height: 380px;
+	    	width: initial;
+	    }
+		.slider-img-title {
+		    padding: 20px 20px 0px;
+            bottom: 100px;
+		    position: absolute;
+		    background-color: #fff;
+		    width: 90%;
+		    margin-bottom: 10px;
+		    h2 {
+			    font-size: 26px;
+			    margin-bottom: 0px;
+			    font-family: 'minionpro-bold';
+			    color: #242424;
+			    text-align: left;
+		    }
+			.header-hr {
+				width: 70px;
+			    margin: 15px 0px 0px;
+			}
+		}
+		ul li p {
+		    position: absolute;
+		    width: 85%;
+		    font-size: 15px;
+		    color: #141414;
+		    text-align: left;
+		    font-family: $base-font-family;
+		}
+		.btn-yellow {
+			display: none;
+		}
+	}
+}
+
+// DESKTOP
+@media(min-width: $large-screen) {
+	.mod-showcase__full-image .mod-showcase #slider {
+		height: 540px;
+		ul {
+			min-height: 100%;
+		}
+		ul li {
+			// width: 910px;
+			min-height: 100%;
+			.slider-content {
+				width: 45%;
+				position: absolute;
+				bottom: 0px;
+				background-color: #ffffff;
+				text-align: right;
+				.slider-img-title {
+					bottom: 0px;
+				    position: relative;
+				    width: 100%;
+				    text-align: left;
+					h2 {
+						font-size: 40px;
+					}
+				}
+				p {
+					position: relative;
+					width: 100%;
+					font-size: 18px;
+					text-align: left;
+				}
+				.btn-yellow {
+					background-color: $brand-yellow;
+				    border-radius: 0px;
+				    color: #000000;
+				    font-size: 24px;
+				    padding: 15px 12px 12px 10px;
+					height: 50px;
+					display: inline-block;
+				    a {
+				    	color: #000000;
+				    }
+				    &:hover,
+				    &:active,
+				    &:focus {
+				    	background-color: $brand-yellow;
+				    	color: #000000;
+				    }
+				    i {
+				    	font-size: 20px;
+				    	margin-left: 10px;
+				    	vertical-align: text-top;
+					}
+				}
+			}
+			img {
+				height: 490px;
+				margin-bottom: 0px;
+				width: 100%;
+			}
+		}
+	}
+	.mod-showcase__slider-arrow {
+		bottom: 35px;
+	    right: 53px;
+	}
+	.mod-showcase__slider hr {
+		margin: 40px 53px 0px;
+	}
+}
+@media(min-width: $extra-large-screen) {
+	.mod-showcase__full-image {
+		width: 1260px;
+	    margin: 0 auto;
+		#slider ul li {
+			width: 1260px;
+		}
+	}
+}

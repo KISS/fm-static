@@ -1,0 +1,849 @@
+.header-container {
+    min-width: 100%;
+    height: 60px;
+    z-index: 10;
+    position: absolute;
+    top: 0px;
+}
+
+.overlay {
+	&:before {
+		content: '';
+		background: rgba(0, 0, 0, 0.8);
+		min-width: 100%;
+		min-height: 100%;
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+}
+
+// added to body on click
+.no-scroll {
+	overflow: hidden;
+}
+
+.header-container__logo {
+	display: inline-block;
+    cursor: pointer;
+    position: relative;
+    z-index: 15;
+	top: 0;
+	left: 20px;
+	height: 60px;
+	a {
+		display: inline-block;
+	}
+	.icon-forbes-logo {
+		color: #ffffff;
+	    font-size: 27px;
+	    display: inline-block;
+	    padding-top: 20px;
+	}
+}
+
+// Nav open button
+.nav__toggle {
+    color: #ffffff;
+    z-index: 15;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 60px;
+    width: 90px;
+    cursor: pointer;
+    i {
+    	@include centerer;
+    	font-size: 65px;
+    }
+	.icon-close {
+		display: none;
+		font-size: 30px;
+		color: #000000;
+	}
+}
+
+.header-container__nav-search li {
+	display: inline-block;
+}
+
+.nav-items {
+    background-color: $nav-outer-bg;
+    color: $brand-light-gray;
+    font-family: $heading-font-family;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    min-height: 100%;
+    display: none;
+	-webkit-overflow-scrolling: touch;
+}
+
+.nav-items {
+	z-index: 2;
+	padding: 10px 20px 0px;
+}
+
+.nav-items--section {
+	font-size: 19px;
+    height: 50px;
+    color: $brand-light-gray;
+	.icon-plus {
+	    float: right;
+	    margin-right: 10px;
+	    color: #f7f7f7;
+        font-size: 22px;
+	}
+	a {
+    	color: $brand-light-gray;
+	    display: inline;
+    }
+}
+
+.nav-items--outer {
+	border-bottom: solid;
+	border-width: 1px;
+	border-color: $light-gray;
+	padding-top: 11px;
+	padding-bottom: 11px;
+}
+
+.nav-items--outer-search {
+	border-bottom: none;
+	font-family: 'gotham-light';
+	color: #ffffff;
+	div {
+		display: inline-block;
+	}
+	i {
+		font-size: 25px;
+		display: inline-block;
+		color: $medium-gray;
+		float: right;
+	    margin-right: 10px;
+        padding-top: 5px;
+	}
+}
+
+.nav-items--inner {
+	z-index: 3;
+	position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: $nav-inner-bg;
+    min-width: 100%;
+    min-height: 100%;
+    padding: 20px;
+    font-size: 19px;
+    display: none;
+    font-family: 'gotham-book';
+    li {
+    	border-bottom: none;
+    	padding-bottom: 0px;
+    	padding-top: 0px;
+    }
+    a {
+    	color: $medium-gray;
+    }
+}
+
+.inner-nav__header {
+    margin-bottom: 15px;
+    font-family: $heading-font-family;
+	a {
+		font-size: 16px;
+		display: inline-block;
+	}
+	
+}
+
+.nav-arrow {
+	border-bottom: solid;
+    padding-bottom: 13px;
+    width: 40px;
+    display: inline-block;
+    margin-left: -20px;
+    padding-left: 20px;
+    border-width: 2px;
+    float: left;
+    color: #ffffff;
+	i {
+		width: 20px;
+		display: inline-block;
+		font-size: 25px;
+	    vertical-align: text-bottom;
+	    font-weight: 700;
+	}
+}
+
+.inner-nav__header-title {
+    margin-left: 10px;
+    border-bottom: solid;
+    display: inline-block;
+    padding-bottom: 17px;
+    border-width: 1px;
+    color: #ffffff;
+    border-color: $medium-gray;
+}
+
+.inner-nav__content {
+	padding-bottom: 20%;
+    padding-top: 15px;
+}
+
+.inner-nav__content-feature {
+	display: none;
+}
+
+#inner-nav__franchises {
+	.inner-nav__content-links {
+		li {
+			padding-bottom: 30px;
+			a {
+				color: $brand-light-gray;
+				font-size: 19px;
+				display: inline-block;
+			}
+		}
+	}
+	.inner-nav__content-upcoming {
+		margin-top: 50px;
+	    border-top: solid;
+	    border-width: 1px;
+	    font-size: 16px;
+	    border-color: $dark-gray;
+	    min-width: 100%;
+	    color: #ffffff;
+	    padding-bottom: 200px;
+	    font-family: $heading-font-family;
+	    div {
+			padding: 25px 0;
+	    }
+	   
+	    ul:last-child {
+	    	color: #ffffff;
+	    }
+	}
+	.inner-nav__content-upcoming-item {
+    	padding: 0px;
+    	margin: 0 auto;
+    	min-width: 100%;
+    	.inner-nav__content-upcoming-item__title {
+	    	margin-bottom: 16px;
+	    	display: inline-block;
+	    	font-family: $heading-font-family;
+	    	color: $dark-gray;
+	    	font-size: 16px;
+    	    vertical-align: top;
+    	    width: 50px;
+	    } 
+	    .inner-nav__content-upcoming-item__tagline {
+	    	font-size: 18px;
+	    	font-family: 'minionpro-semibold';
+	    	display: inline-block;
+	    	color: #ffffff;
+    	    width: 77%;
+	    }
+    } 
+}
+
+#inner-nav__platforms {
+	min-height: 100%;
+	.inner-nav__content {
+		li {
+			padding-bottom: 30px;
+		}
+		a {
+			color: #ffffff;
+			font-size: 19px;
+	        display: inline-block;
+		}
+	}
+	.inner-nav__content-links {
+		i {
+			width: 40px;
+			display: inline-block;
+			text-align: center;
+			font-size: 40px;
+			color: $brand-yellow;
+		    margin: 0 20px 0 5px;
+			vertical-align: middle;
+		}
+		.icon-digital {
+		    font-size: 50px;
+		}
+		span {
+			display: inline-block;
+		}
+	}
+
+	.icon-digital {
+	    font-size: 40px;
+	}
+	.inner-nav__platforms-more--open {
+		border-top: 1px solid $medium-gray;
+		padding-top: 20px;
+		display: block;
+		i {
+			font-size: 25px;
+			vertical-align: sub;
+		}
+	}
+	#inner-nav__platforms-more--close {
+		padding-top: 25px;
+		i {
+			transform: rotate(0.25turn);
+			font-size: 25px;
+			vertical-align: sub;
+		}
+	}
+	#inner-nav__platforms-more__items {
+		margin-top: -35px;
+	}
+}
+
+#inner-nav__advertising {
+	min-height: 100%;
+	.inner-nav__content--title {
+		font-size: 15px;
+		font-family: 'minionpro-medium-it';
+		color: #a9a9a9;
+		padding-bottom: 20px;
+	}
+	.inner-nav__content--items li {
+		padding-bottom: 35px;
+	}
+	.inner-nav__content--items a {
+		font-size: 19px;
+		color: $brand-light-gray;
+	    display: inline-block;
+	}
+	.inner-nav__content-campaign {
+		display: none;
+	}
+}
+
+#inner-nav__contactus {
+	.inner-nav__content {
+		font-family: $base-font-family;
+		li {
+			color: $medium-gray;
+			font-size: 16px;
+			color: #d3d3d3;
+		}
+		.btn-yellow {
+			color: #000000;
+		    width: 225px;
+		    height: 50px;
+		    font-size: 24px;
+		    padding-top: 10px;
+		    font-family: 'minionpro-semibold';
+		    display: block;
+		    i {
+		    	vertical-align: middle;
+		    	font-size: 25px;
+		    	margin-left: 8px;
+		    	font-weight: normal;
+		    }
+		}
+		.inner-nav__content--img {
+	    	margin: 30px auto;
+	    	width: 275px;
+	    }
+		.inner-nav__contactus-info li {
+			border-bottom: solid;
+			border-width: 1px;
+			border-color: #909090;
+			padding-bottom: 28px;
+			margin-bottom: 30px;
+			div {
+				display: block;
+			}
+		}
+		.inner-nav__contactus-info__header {
+			font-family: 'gotham-book';
+			font-size: 19px;
+			color: #ffffff;
+			padding-bottom: 10px;
+		}
+		.inner-nav__contactus-contacts {
+			padding-bottom: 40px;
+			font-family: $base-font-family;
+		}
+		.inner-nav__contactus-contacts__header { 
+			padding-bottom: 5px;
+			font-size: 19px;
+			color: #ffffff;
+			font-family: 'gotham-book';
+		}
+		.inner-nav__contactus-contacts__subheader { 
+			color: #ffffff;
+		}
+	}
+}
+
+#inner-nav__subscribe {
+	font-family: $base-font-family;
+	.inner-nav__content-heading {
+		font-size: 24px;
+		font-family: $heading-font-family;
+		color: #ffffff;
+		padding-bottom: 15px;
+		.header-hr {
+			margin: 10px 0px 0px;
+			border-color: #ffffff;
+		}
+	}
+	.inner-nav__content-tagline {
+		font-size: 16px;
+		width: 80%;
+		margin-bottom: 35px;
+		color: $medium-gray;
+	}
+	.inner-nav__content-form span {
+		font-size: 16px;
+		margin-bottom: 25px;
+	    display: block;
+	    color: $medium-gray;
+	    float: none;
+	    padding: 0px;
+	    margin-right: 0px;
+	}
+	.inner-nav__content-form__email {
+		background-color: #1e1e1e;
+		border: none;
+	    border-bottom: 2px solid #ffffff;
+	    border-radius: 0px;
+	    padding: 18px 15px 16px;
+	    font-size: 14px;
+	    font-family: 'gotham-book';
+	    margin-bottom: 20px;
+	    &::-webkit-input-placeholder {
+		   	color: #666666;
+		}
+		&:-moz-placeholder { /* Firefox 18- */
+			color: #666666;
+		}
+		&::-moz-placeholder {  /* Firefox 19+ */
+			color: #666666;
+		}
+		&:-ms-input-placeholder {  
+			color: #666666;
+		}
+	}
+	.btn-yellow {
+		font-size: 24px;
+		padding: 10px;
+		i {
+			font-size: 22px;
+			font-weight: normal;
+		    margin-top: -2px;
+			vertical-align: text-top;
+		}
+	}
+	.inner-nav__content-form__options {
+		color: $medium-gray;
+
+		input[type='checkbox'] {
+			display: none;
+		}
+		input[type='checkbox'] + label {
+			display: block;
+			width: 23px;
+			height: 23px;
+			border-radius: 50px;
+			display: block;
+			background: #434343;
+			position: relative;
+			border: 2px solid #bababa;
+			cursor: pointer;
+			margin-left: 10px;
+		    margin-bottom: 12px;
+		}
+		input[type='checkbox'] + label span {
+			font-size: 15px;
+		    color: #ffffff;
+		    cursor: pointer;
+		    position: absolute;
+		    top: 0px;
+		    left: 35px;
+		    width: 240px;
+		    margin-bottom: 0px;
+		    font-family: 'gotham-book';
+		} 
+		input[type='checkbox']:checked + label:before {
+			content: "\e914";
+			color: $brand-yellow;
+		    font-size: 17px;
+		    display: block;
+		    margin-left: 5px;
+		}
+	}
+}
+
+// Nav open on nav__toggle click
+.nav-open.header-container {
+		background-color: #ffffff;
+	}
+
+.nav-open {
+	.icon-forbes-logo {
+		color: #000000;
+	}
+	.nav__toggle {
+		background-color: $brand-yellow;
+		.icon-mobile-menu {
+			display: none;
+		}
+		.icon-close {
+			display: block;
+		}
+	}
+	.nav-items {
+		display: block;
+		top: 60px;
+	    overflow-x: scroll;
+	}
+	.nav-items--inner {
+		top: 0px;
+		ul li {
+			padding-top: 0px;
+		}
+	}
+}
+
+// Nav open on item selection
+.nav-items--inner--selected {
+	display: block;
+}
+
+// Nav on Scroll
+.header-container--on-scroll {
+	position: fixed;
+	background-color: #ffffff;
+	.icon-forbes-logo {
+		color: #000000;
+	}
+	.icon-mobile-menu {
+		color: #000000;
+	}
+}
+
+
+
+@media(min-width: $large-screen) {
+	.header-container {
+	    height: 70px;
+	}
+
+	.header-container__logo {
+		margin-top: 0px;
+		font-size: 28px;
+    	.icon-forbes-logo {
+    		padding-top: 30px;
+    		padding-left: 10px;
+		    font-size: 35px;
+    	}
+    }
+
+    .header-container__nav {
+		position: absolute;
+		width: 260px;
+	    right: 0px;
+	    top: 0px;
+	}
+
+	.nav-items {	
+		display: block;
+		position: relative;
+		padding-top: 0px;
+		background-color: transparent;
+	    min-height: 100%;
+	    overflow: visible;
+	}
+
+	.nav-items--section {
+		position: relative;
+	    top: 15px;
+     	width: 220px;
+	}
+
+	.nav-items--outer {
+		display: block;
+	    padding-top: 12px;
+	    padding-bottom: 10px;
+	    border-color: $dark-gray;
+	}
+
+ 	.nav-items--inner {
+ 		top: -3px;
+	    left: inherit;
+ 		right: 0px;
+ 		width: 335px;
+	    margin-right: -30px;
+ 	}
+
+ 	.inner-nav__header {
+ 		display: none;
+ 	}
+
+    .nav__toggle {
+		display: none;
+	}
+
+	.inner-nav__content-feature {
+		display: block;
+	    border-top: solid 1px #909090;
+	    border-bottom: solid 1px #909090;
+	    padding-top: 20px;
+	    padding-bottom: 20px;
+		img {
+			width: 100px;
+			height: 100px;
+		}
+		div {
+			font-family: $heading-font-family;
+			font-size: 22px;
+			color: #ffffff;
+		}
+		span {
+			font-size: 16px;
+			font-family: 'minionpro-semibold';
+			max-width: 170px;
+		    display: inline-block;
+		    color: $medium-gray;
+		}
+		i {
+		    float: right;
+		    display: inline-block;
+		    font-size: 24px;
+		    color: $brand-yellow;
+		}
+		li:last-child {
+			padding-bottom: 0px;
+		}
+	}
+
+	#inner-nav__platforms {
+		.inner-nav__content {
+			.inner-nav__content-links {
+			    i {
+					margin-left: 0px;
+				    font-size: 40px;
+			    }
+			}
+			.inner-nav__platforms-more--open {
+		    	display: none;
+		    }
+			#inner-nav__platforms-more--close {
+		    	display: none;
+		    }
+		}
+		.inner-nav__content-feature {
+			a {
+				display: inline;
+			}
+			li:last-child {
+				padding-bottom: 0px;
+			}
+		}
+	} 
+
+	#inner-nav__advertising {
+		.inner-nav__content--title {
+			display: none;
+		}
+		.inner-nav__content-campaign {
+			display: block;
+			border-bottom: solid 1px #909090;
+			margin-bottom: 50px;
+			div {
+				font-family: $heading-font-family;
+				font-size: 24px;
+				color: #ffffff;
+			    line-height: 1.2;
+				width: 170px;
+			}
+			.header-hr {
+				border-bottom-color: #ffffff;
+				border-bottom-width: 3px;
+				width: 60px;
+				margin-left: 0px;
+				margin-top: 5px;
+			}
+			p {
+				font-family: $base-font-family;
+				font-size: 16px;
+				color: $medium-gray;
+				padding-top: 20px;
+			    padding-bottom: 30px;
+			    margin-bottom: 0px;
+			}
+		}
+		.inner-nav__content-feature {
+			margin-top: 10px;
+		}
+	}
+
+	#inner-nav__contactus {
+		.inner-nav__content {
+			margin-top: 0px;
+			.btn-yellow {
+				position: absolute;
+			    bottom: 180px;
+			}
+			.inner-nav__content--img {
+				margin-top: 0px;
+				margin-bottom: 25px;
+			}
+		}
+	}
+
+	#inner-nav__subscribe {
+		.inner-nav__content--heading {
+			.header-hr {
+				border-bottom-width: 3px;
+				width: 60px;
+			}
+		}
+		.btn-yellow {
+			float: right;
+			width: 140px;
+			font-size: 24px;
+			font-family: 'minionpro-semibold';
+		}
+	}
+
+	// Nav open on nav__toggle click
+	.nav-open {
+		.nav-items {
+			display: block;
+			background-color: $nav-outer-bg;
+		    top: 0px;
+		}
+		.header-container__nav {
+			height: 1000px;
+		}
+	}
+
+	// Nav open on item selection
+	.nav-open--selection {
+		&.header-container__nav {
+			width: 595px;
+		    height: 1000px;
+		}
+		.nav-items {
+			padding-left: 20px;
+			padding-right: 30px;
+			width: 260px;
+			background-color: $nav-outer-bg;
+		}
+		.nav-items--outer--selected {
+			border-bottom: none;
+			border-top: none;
+			background-color: #262626;
+			width: 260px;
+			margin-left: -20px;
+		    margin-top: -1px;
+			border-right: solid 7px $brand-yellow;
+			a {
+				margin-left: 20px;
+			}
+			.icon-plus {
+				display: none;
+			}
+		}
+		.nav-items--section .nav-items--outer {
+		    position: static;
+		}
+		.nav-items--section .nav-items--inner {
+			width: 335px;
+		    left: 240px;
+		    padding-left: 30px;
+		    padding-right: 30px;
+		    margin-right: 0;
+			top: -14px;
+			height: 1000px;
+		    overflow: scroll;
+		    ul li {
+		    	border: none;
+		    }
+		}
+		.inner-nav__content {
+	    	height: 1200px;
+	    }
+		#inner-nav__platforms {
+    	    top: -65px;
+	    }
+	    #inner-nav__advertising {
+	        top: -116px;
+	    }
+	    #inner-nav__contactus {
+    	    top: -218px;
+	    }
+	    #inner-nav__subscribe {
+	    	top: -269px;
+	    }
+	}
+
+	// Nav on Scroll
+	.header-container--on-scroll {
+		.header-container__logo {
+			.icon-forbes-logo {
+				padding-top: 20px;
+			}
+		}
+		.nav-items {
+			display: none;
+		}
+		.nav__toggle {
+			background-color: $brand-yellow;
+			width: 260px;
+			height: 70px;
+			display: block;
+		}
+		.header-container__nav {
+			top: 70px;
+		}
+		.inner-nav__content {
+	    	height: 1000px;
+	    }
+	    .nav-open--selection {
+			.nav-items--section {
+				position: static;
+				height: 50px;
+				.nav-items--inner {
+					position: relative;
+					top: -50px;
+					padding-bottom: 60%;
+				}
+				.nav-items--outer--selected {
+				    margin-top: 0px;
+				}
+			}
+			#inner-nav__platforms {
+			    top: -100px;
+		    }
+			#inner-nav__advertising {
+			    top: -150px; 
+			}
+			#inner-nav__contactus {
+			    top: -250px; 
+			}
+			#inner-nav__subscribe {
+			    top: -300px; 
+			}
+		}
+	}
+	.header-container--on-scroll.nav-open {
+    	.nav-items {
+    		overflow-x: visible;
+    	}
+    	.nav-items--section {
+    		top: 0px;
+    	}
+    }
+}

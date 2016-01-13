@@ -1,0 +1,173 @@
+.footer-container {
+	background-color: $brand-dark-gray;
+	color: $dark-gray;
+	font-family: 'gotham-book';
+	.footer {
+		padding: 20px 20px 60px;
+		hr {
+			margin: 0 auto 12px;
+			border-color: $brand-medium-gray;
+		}
+		a {
+			color: $medium-gray;
+		}
+	}
+	.footer-logo {
+		width: 115px;
+		padding-bottom: 10px;
+	}
+	.icon-forbes-logo {
+		display: inline-block;
+		color: #bdbdbd;
+		font-size: 20px;
+	}
+	.footer-social li {
+		display: inline-block;
+		padding: 0px 15px 20px 0;
+		color: $medium-gray;
+		font-size: 18px;
+	}
+	.footer-info {
+		padding-bottom: 50px;
+	}
+	.footer-info__contact {
+		font-size: 12px;
+		width: 50%;
+		display: inline-block;
+	}
+	.footer-info__bandr {
+		font-size: 12px;
+		width: 45%;
+		display: inline-block;
+		padding-left: 30px;
+		vertical-align: top;
+		i {
+			width: 40px;
+			color: #bdbdbd;
+		    font-size: 16px;
+		}
+	}
+	.footer-links {
+		font-size: 10px;
+		li {
+			display: inline-block;
+			margin-right: 28px;
+			margin-bottom: 18px;
+		}
+		hr {
+			margin-bottom: 30px;
+		}
+	}
+	.footer-copyright {
+		padding: 20px 0 30px;
+		font-size: 11px;
+		hr {
+			margin-bottom: 20px;
+		}
+	}
+	.footer-tandc {
+		font-size: 9px;
+	}
+	.footer-info__contact hr {
+		display: none;
+	}
+	@media(min-width: $large-screen) {
+		.footer {
+			padding: 45px 53px 170px;
+		}
+		.footer-logo {
+		    vertical-align: top;
+		    width: 180px;
+		    margin-right: 135px;
+		}
+		.icon-forbes-logo {
+			font-size: 30px;
+		}
+		.footer-social {
+			display: inline-block;
+		    vertical-align: top;
+		    width: 15%;
+		    hr {
+		    	margin-bottom: 15px;
+		    }
+		    i {
+	    	    font-size: 22px;
+		    }
+		}
+		.footer-info {
+			display: inline-block;
+			width: 45%;
+			margin-left: 35px;
+			padding-bottom: 70px;
+			.footer-info__contact {
+			    width: 40%;
+			    display: inline-block;
+			    font-size: 14px;
+			}
+		}
+		.footer-info__contact hr {
+			display: inline-block;
+			width: 100%;
+			vertical-align: top;
+	    	margin-bottom: 15px;
+		}
+		.footer-info__bandr {
+			width: 55%;
+		    padding-left: 25px;
+		    font-size: 14px;
+			div {
+				display: inline-block;
+				vertical-align: sub;
+				&:first-child {
+					float: right;
+				}
+			}
+			i {
+			    font-size: 25px;
+			}
+		}
+		.footer-links {
+			margin-left: 320px;
+			font-size: 12px;
+			padding-bottom: 0px;
+			hr {
+		    	margin-bottom: 30px;
+		    }
+		}
+		.footer-copyright {
+			margin-left: 320px;
+			font-size: 12px;
+			padding-top: 12px;
+		}
+		.footer-tandc {
+		    width: 50%;
+			margin-left: 320px;
+			font-size: 12px;
+		}
+	}
+	@media(min-width: $extra-large-screen) {
+		.footer-social {
+		    width: 25%;
+		    i {
+	    	    font-size: 26px;
+		    }
+		}
+		.footer-info {
+			width: 45%;
+			.footer-info__contact {
+			    width: 45%;
+			    font-size: 15px;
+			}
+		}
+		.footer-info__bandr {
+			width: 45%;
+		    padding-left: 45px;
+			i {
+				width: 60px;
+			}
+		}
+		.footer-tandc {
+		    width: 60%;
+		}
+	}
+}

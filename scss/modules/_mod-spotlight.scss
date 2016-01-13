@@ -1,0 +1,131 @@
+.mod-spotlight {
+	border-top: 1px solid $dark-gray;
+    position: relative;
+    padding-top: 30px;
+}
+.mod-spotlight__title {
+	font-size: 30px;
+	text-align: center;
+	h2 {
+		margin-bottom: 10px;
+	}
+}
+.mod-spotlight #slider {
+	position: relative;
+	overflow: hidden;
+	margin: 20px auto 0 auto;
+	ul {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		height: 200px;
+		list-style: none;
+	}
+	ul li {
+		position: relative;
+		display: block;
+		float: left;
+		margin: 0;
+		padding: 0;
+		width: 320px;
+		height: 336px;
+		img {
+			margin-bottom: 20px;
+			background-color: $spotlight-bg;
+		}
+		p {
+			padding: 0 20px;
+			font-size: 12px;
+		}
+	}
+}
+.mod-spotlight__slider {
+	margin-top: 20px;
+}
+.mod-spotlight__slider hr {
+    margin: 45px 20px 0;
+}
+.mod-spotlight__slider-arrow {
+	position: absolute;
+    bottom: 15px;
+    right: 20px;
+    i {
+		color: #000000;
+		font-weight: bold;
+		display: inline-block;
+	    font-size: 22px;
+    }
+    .icon-arrow-left {
+    	padding-right: 20px;
+    	
+    }
+}
+
+@media(min-width: $large-screen) {
+	.mod-spotlight {
+		padding-left: 53px;
+		padding-right: 53px;
+		padding-top: 50px;
+	    margin: 0 auto 38px;
+	}
+	.mod-spotlight__title {
+	    width: 90%;
+	    margin: 0px auto 40px;
+	}
+	.mod-spotlight__title h2 {
+		font-size: 70px;
+		margin-bottom: 20px;
+	}
+	.mod-spotlight__slider {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.mod-spotlight #slider ul li p {
+	    font-size: 18px;
+	    font-family: 'minionpro-it';
+	    color: #141414;
+	    position: absolute;
+	    bottom: 0px;
+	    right: 37px;
+	    width: 45%;
+	    background-color: #ffffff;
+	    padding-top: 30px;
+	    padding-right: 0;
+	    margin: 0;
+	    padding-left: 30px;
+	}
+	.mod-spotlight #slider {
+		ul li {
+			width: 850px;
+			height: 540px;
+		}
+	}
+	.mod-spotlight #slider ul li img {
+		width: 813px;
+	}
+	.mod-spotlight__slider-arrow {
+		position: relative;
+		text-align: center;
+		margin-top: 30px;
+		right: 0px;
+		bottom: 0px;
+	}
+	.mod-spotlight__slider hr {
+		margin: 30px 0px 0px;
+	}
+}
+
+@media(min-width: $extra-large-screen) {
+	.mod-spotlight #slider {
+		ul li {
+			width: 930px;
+		}
+	}
+	.mod-spotlight #slider ul li img {
+		width: 930px;
+	}
+	.mod-spotlight__slider hr {
+		width: 930px;
+	    margin: 30px auto 0;
+	}
+}

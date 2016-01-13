@@ -1,0 +1,91 @@
+.mod-sidemenu {
+	padding: 38px 20px 10px;
+	background-color: #a3264c;
+	color: #ffffff; 
+	font-family: 'minionpro-semibold';
+}
+.mod-sidemenu a {
+	color: #ffffff;
+}
+.mod-sidemenu ul {
+    padding-bottom: 25px; 
+}
+.mod-sidemenu__upcoming-heading {
+	font-size: 18px;
+	font-family: $heading-font-family;
+	border-bottom: 1px solid #fecbdb;
+	padding-bottom: 20px;
+	margin-bottom: 18px;
+}
+.mod-sidemenu ul li:first-child {
+	color: #ffb9ce;
+    width: 22%;
+    font-size: 14px;
+    font-family: 'gotham-bold';
+    display: inline-block;
+    vertical-align: top;
+}	
+.mod-sidemenu__quicklinks-heading {
+	font-size: 18px;
+	font-family: $heading-font-family;
+	border-bottom: 1px solid #fecbdb;
+	padding-bottom: 20px;
+	margin-bottom: 18px;
+	margin-top: 25px;
+}
+.mod-sidemenu ul li:nth-child(2n) {
+	font-size: 15px;
+	width: 75%;
+    display: inline-block;
+}	
+.mod-sidemenu i {
+	font-size: 22px;
+}
+
+
+@media(min-width: $large-screen) {
+	.mod-sidemenu {
+	    position: absolute;
+	    top: 545px;
+	    right: 53px;
+	    width: 265px;
+	    padding: 25px 20px 5px;
+	}
+	.mod-sidemenu__upcoming-heading {
+		margin-bottom: 30px;
+		font-size: 22px;
+	}
+	.mod-sidemenu__quicklinks-heading {
+		margin-bottom: 30px;
+		margin-top: 20px;
+	}
+	.mod-sidemenu ul li:first-child {
+		font-size: 16px;
+	}
+	.mod-sidemenu ul li:nth-child(2n) {
+		font-size: 16px;
+	}
+	.mod-sidemenu__quicklinks ul li:first-child {
+	    width: 15%;
+	    font-size: 16px;
+	}
+	.mod-sidemenu__quicklinks ul li:nth-child(2n) {
+		width: 80%;
+		font-size: 16px;
+	}
+}
+
+@media(min-width: $extra-large-screen) {
+	.mod-sidemenu {
+	    width: 315px;
+	}
+	.mod-sidemenu ul li:first-child {
+	    font-size: 18px;
+	}
+	.mod-sidemenu ul li:nth-child(2n) {
+		font-size: 18px;
+	}
+	.mod-sidemenu__quicklinks-heading {
+		font-size: 22px;
+	}
+}
